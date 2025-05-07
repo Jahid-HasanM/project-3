@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 }
 /* common css end */
 /* nav part start */
+.mine-manu{
+    padding: 26px 0;
+    border-bottom: 1px solid rgb(163, 156, 156);
+}
 .mine-manu img{
     width: 70px;
 }
@@ -105,9 +109,25 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 
 
 /* nav part end */
-/* nav part start */
+/* banner part start */
+.banner-text h1{
+    font-size: 90px;
+    font-weight: 300;
+    font-family: var(--Ubuntu);
+    color: var(--primaryColor);
+    letter-spacing: 1%;
+    text-transform: uppercase;
+}
+.banner-text h1 span{
+    font-size: 90px;
+    font-weight: 700;
+    font-family: var(--Ubuntu);
+    color: var(--primaryColor);
+    display: block;
+}
+.
 
-/* nav part end */
+/* banner part end */
 /* nav part start */
 
 /* nav part end */
