@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     font-family: var(--Ubuntu);
     color: #fff;
     background: var(--primaryColor);
-
 }
 .sgin-up-button a:nth-child(2){
     width: 106px;
@@ -96,7 +95,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     width: 102px;
     height: 48px;
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+   background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,10 +106,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     color: var(--primaryColor);
 
 }
-
-
 /* nav part end */
 /* banner part start */
+#banner{
+    position: relative;
+    padding-top: 84px;
+}
 .banner-text h1{
     font-size: 90px;
     font-weight: 300;
@@ -117,7 +119,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     color: var(--primaryColor);
     letter-spacing: 1%;
     text-transform: uppercase;
-    margin-top: 84px;
+    
     line-height: 95px;
 }
 .banner-text h1 span{
@@ -130,21 +132,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     border-right: 2px solid;
     animation: type 1s steps(90) 1s 1 normal both, cursor 1s step-end infinite;
 }
-.banner-text .banner-line{
-    width: 335px;
-    height: 4px;
-    background: var(--primaryColor);
-    margin-top: 93px;
-}
-.banner-line{
-    width: 353px;
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--primaryColor);
-    font-family: var(--Ubuntu);
-    margin-top: 62px;
-} 
-  @keyframes type {
+@keyframes type {
     from {
       width: 0;
     }
@@ -153,19 +141,106 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
       width: 55%;
     }
   }
-  
   @keyframes cursor {
     50% {
       border-color: transparent;
     }
   }
-  
-.
-
+.banner-text .banner-line{
+    width: 335px;
+    height: 4px;
+    background: var(--primaryColor);
+    margin-top: 93px;
+}
+.banner-text p{
+    width: 353px;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--primaryColor);
+    font-family: var(--Ubuntu);
+    margin-top: 62px;
+} 
+.banner-buttons span{
+    width: 58px;
+    height: 58px;
+    background:#42454A ;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7EAE3;
+    font-size: 30px;
+}
+.banner-buttons{
+    display: flex;
+    gap: 50px;
+}
+.banner-buttons .buy{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--Ubuntu);
+    color: #17181A;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.banner-buttons .video-popap{
+    width: 87px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Ubuntu);
+    color: var(--primaryColor);
+}
+.banner-buttons img{
+    width: 80px;
+    animation: prod 3s linear infinite;
+}
+@keyframes prod{ 
+    to{
+        transform: rotate(360deg);
+    }
+}
+.banner-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
 /* banner part end */
-/* nav part start */
+/* counter part start */
+#counter{
+    padding-top: 200px;
+}
+.all-counters{
+    display: flex;
+    justify-content: space-between;
+}
+#counter .single-counter{
+    width: 174px;
+    height: 137px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 18px;
+}
+.single-counter h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Ubuntu);
+    color: var(--primaryColor);
+}
+.single-counter h2 span{
+    font-size: 40px;
+}
+.single-counter p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--Ubuntu);
+    color: var(--primaryColor);
+}
 
-/* nav part end */
+/* counter part end */
 /* nav part start */
 
 /* nav part end */
